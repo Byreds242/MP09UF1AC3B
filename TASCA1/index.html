@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: Verdana, serif;
+        }
+
+        header {
+            height: 70px;
+            line-height: 70px;
+            padding-left: 40px;
+            background: #333334;
+            color: #FFFFFF;
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 50px;
+        }
+
+        section {
+            padding: 0 40px;
+        }
+
+        article {
+            display: flex;
+            margin-top: 30px;
+            background: #CCC;
+        }
+
+        #no-wrap {
+            flex-wrap: nowrap;
+            overflow-x: auto; /* Para que puedas desplazarte horizontalmente si hay muchas imágenes */
+        }
+
+        #wrap {
+            flex-wrap: wrap;
+        }
+
+        img {
+            width: 120px;
+            height: 130px;
+            border: dashed 1px #555;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>Flexbox - Catálogo de Imágenes</header>
+    <section>
+        <h1>flex-wrap: nowrap;</h1>
+        <article id="no-wrap">
+            <img src="img/img1.jpg" alt="Imagen 1">
+            <img src="img/img2.jpg" alt="Imagen 2">
+            <img src="img/img3.jpg" alt="Imagen 3">
+            <img src="img/img4.jpg" alt="Imagen 4">
+            <img src="img/img5.jpg" alt="Imagen 5">
+            <img src="img/img6.jpg" alt="Imagen 6">
+            <img src="img/img1.jpg" alt="Imagen 1">
+            <img src="img/img2.jpg" alt="Imagen 2">
+            <img src="img/img3.jpg" alt="Imagen 3">
+            <img src="img/img4.jpg" alt="Imagen 4">
+            <img src="img/img5.jpg" alt="Imagen 5">
+        </article>
+        <h1>flex-wrap: wrap;</h1>
+        <article id="wrap">
+            <img src="img/img1.jpg" alt="Imagen 1">
+            <img src="img/img2.jpg" alt="Imagen 2">
+            <img src="img/img3.jpg" alt="Imagen 3">
+            <img src="img/img4.jpg" alt="Imagen 4">
+            <img src="img/img5.jpg" alt="Imagen 5">
+            <img src="img/img6.jpg" alt="Imagen 6">
+            <img src="img/img1.jpg" alt="Imagen 1">
+            <img src="img/img2.jpg" alt="Imagen 2">
+            <img src="img/img3.jpg" alt="Imagen 3">
+            <img src="img/img4.jpg" alt="Imagen 4">
+            <img src="img/img5.jpg" alt="Imagen 5">
+        </article>
+    </section>
+</body>
+</html>

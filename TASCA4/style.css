@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para la franja superior */
+.header {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: #003366;
+    color: white;
+    padding: 0 10px;
+}
+
+/* Estilo para la sección debajo de la franja */
+.content {
+    display: flex; /* Utilizamos flexbox para organizar el contenido */
+    align-items: center; /* Centramos verticalmente el contenido */
+    padding: 10px; /* Espaciado interno */
+    margin: 0 100px; /* Margen de 100px por cada lado */
+}
+
+/* Estilo para la barra de búsqueda */
+.search-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto; /* Centra el contenedor */
+    width: 500px; /* Ancho aumentado para la barra de búsqueda */
+}
+
+.search-bar {
+    flex-grow: 1; /* Permite que la barra crezca */
+    height: 30px;
+    padding: 5px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 0; /* Sin margen a la derecha */
+    width: 550px; /* Ancho aumentado en 50px */
+}
+
+.search-icon {
+    width: 30px;
+    height: 30px;
+    background-image: url('img/lupa.png'); /* Reemplaza con la ruta de tu imagen */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #66125f; /* Fondo lila */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -1px; /* Pegado a la barra de búsqueda */
+    border-radius: 5px;
+}
+
+/* Estilo para el logo */
+.logo {
+    width: 200px; /* Ancho del logo */
+    height: 100px; /* Alto del logo */
+    margin-right: 10px; /* Espacio entre el logo y la barra de búsqueda */
+}
+
+/* Estilo para las mini imágenes */
+.small-images {
+    display: flex; /* Para alinear las mini imágenes en fila */
+    margin-left: auto; /* Para empujar las imágenes al final */
+}
+
+.small-images img {
+    width: 30px; /* Ancho de las mini imágenes */
+    height: 30px; /* Alto de las mini imágenes */
+    margin-left: 5px; /* Espacio entre mini imágenes */
+}
+
+/* Estilo para las opciones a la derecha */
+.options {
+    display: flex; /* Alinear horizontalmente */
+    justify-content: flex-end; /* Alinear a la derecha */
+    margin-top: 10px; /* Margen superior para separar de las mini imágenes */
+    margin-left: auto; /* Para empujar las opciones a la derecha */
+    padding-right: 100px; /* Mantener el margen de 100px a la derecha */
+}
+
+.option {
+    margin-left: 10px; /* Margen entre opciones */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilo para la imagen de fondo */
+.full-width-image {
+    width: 100%; /* Ocupa el ancho completo */
+    height: 400px; /* Altura de 400px */
+    background-image: url('img/fondo.png'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Cubre el área completamente */
+    background-position: center; /* Centra la imagen */
+    margin-top: 20px; /* Espacio entre la imagen y las opciones */
+    position: relative; /* Para posicionar el div blanco sobre ella */
+}
+
+/* Estilo para el div blanco */
+.white-box {
+    width: 400px; /* Ancho del div */
+    height: 300px; /* Alto del div */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad del 80% */
+    position: absolute; /* Para superponerlo */
+    top: 50%; /* Centrado verticalmente */
+    right: 20px; /* Margen de 20px a la derecha */
+    transform: translateY(-50%); /* Para ajustar la posición centrada verticalmente */
+    z-index: 1; /* Asegura que esté por encima de la imagen */
+}
+
+/* Estilo para las cajas de imágenes */
+.image-boxes {
+    display: flex; /* Utiliza flexbox para alinear las cajas de imágenes */
+    justify-content: center; /* Centra las cajas horizontalmente */
+    margin-top: 20px; /* Espacio entre la imagen de fondo y las cajas */
+}
+
+.image-box {
+    position: relative; /* Asegúrate de que el contenedor tenga una posición relativa */
+    display: flex; /* Utiliza flexbox para alinear elementos */
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+    width: 33%; /* Asegúrate de que el ancho sea el deseado */
+    margin: 10px; /* Margen de 10px alrededor */
+    height: 350px; /* Ajusta la altura del contenedor según sea necesario */
+    overflow: hidden; /* Oculta cualquier contenido que sobrepase el contenedor */
+}
+
+.image {
+    width: 100%; /* Imagen ocupa el 100% del div */
+    height: 100%; /* Imagen ocupa el 100% del div */
+    object-fit: cover; /* Mantiene la relación de aspecto */
+}
+
+/* Estilos para los textos */
+.image-title {
+    position: absolute; /* Para posicionar el texto sobre la imagen */
+    bottom: 30px; /* Distancia desde la parte inferior */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translateX(-50%); /* Ajuste para centrar */
+    color: white; /* Color del texto */
+    font-size: 18px; /* Tamaño del texto del título */
+    text-align: center; /* Centrado */
+}
+
+.image-text {
+    position: absolute; /* Para posicionar el texto sobre la imagen */
+    bottom: 10px; /* Distancia desde la parte inferior */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translateX(-50)
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Inicio - Windows 8</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100vw; /* Ocupa el ancho completo de la pantalla */
+            height: 100vh; /* Ocupa el alto completo de la pantalla */
+            padding: 10px; /* Espacio adicional para que los bordes externos también tengan espacio */
+            box-sizing: border-box; /* Asegura que el padding no altere el tamaño del contenedor */
+        }
+
+        .tile {
+            position: relative; /* Para posicionar el texto */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0078d7; /* Color azul típico de Windows 8 */
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: bold;
+            border: 1px solid #333;
+            box-sizing: border-box; /* Para que los bordes no alteren el tamaño */
+            transition: background-color 0.3s;
+            margin: 5px; /* 5px de margen por cada lado, total 10px entre elementos */
+            height: 150px; /* Altura fija de 150px para todos los divs */
+        }
+
+        /* Configuración específica para los divs de las dos primeras filas */
+        .tile.row-1 {
+            width: calc(33.33% - 20px); /* Ancho ajustado para 33%, menos el margen */
+        }
+
+        .tile.row-2 {
+            width: calc(17% - 20px); /* Ancho ajustado para 16%, menos el margen */
+        }
+
+        /* Configuración para la tercera fila con tres divs del 33% */
+        .tile.row-3 {
+            width: calc(33.33% - 20px); /* Ancho ajustado para 33%, menos el margen */
+        }
+
+        .tile:hover {
+            background-color: #005a9e; /* Color al pasar el ratón */
+        }
+
+        /* Variaciones de colores para diferentes tiles */
+        .tile.tile1 { background-color: #0078d7; }
+        .tile.tile2 { background-color: #0099cc; }
+        .tile.tile3 { background-color: #8c0095; }
+        .tile.tile4 { background-color: #d80073; }
+        .tile.tile5 { background-color: #f7630c; }
+
+        /* Estilo para las imágenes */
+        .tile img {
+            width: 50px;
+            height: 50px;
+        }
+
+        /* Estilo para el texto en la esquina inferior izquierda */
+        .tile .text {
+            position: absolute;
+            bottom: 5px; /* Margen inferior */
+            left: 5px; /* Margen izquierdo */
+            font-size: 0.8em; /* Tamaño de fuente más pequeño */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <!-- Primera fila con distribuciones personalizadas -->
+        <div class="tile row-1 tile1">
+            <img src="img/img1.png" alt="App 1">
+            <div class="text">Mail</div>
+        </div>
+        <div class="tile row-1 tile2">
+            <img src="img/img2.png" alt="App 2">
+            <div class="text">Calendar</div>
+        </div>
+        <div class="tile row-2 tile3">
+            <img src="img/img3.png" alt="App 3">
+            <div class="text">Internet Explorer</div>
+        </div>
+        <div class="tile row-2 tile4">
+            <img src="img/img4.png" alt="App 4">
+            <div class="text">Store</div>
+        </div>
+
+        <!-- Segunda fila con distribuciones personalizadas (igual que la primera) -->
+        <div class="tile row-1 tile5">
+            <img src="img/img1.png" alt="App 5">
+            <div class="text">People</div>
+        </div>
+        <div class="tile row-1 tile1">
+            <img src="img/img2.png" alt="App 6">
+            <div class="text">Photos</div>
+        </div>
+        <div class="tile row-2 tile2">
+            <img src="img/img3.png" alt="App 7">
+            <div class="text">Maps</div>
+        </div>
+        <div class="tile row-2 tile3">
+            <img src="img/img4.png" alt="App 8">
+            <div class="text">SkyDrive</div>
+        </div>
+
+        <!-- Tercera fila con tres divs de 33% cada uno -->
+        <div class="tile row-3 tile4">
+            <img src="img/img1.png" alt="App 9">
+            <div class="text">Messaging</div>
+        </div>
+        <div class="tile row-3 tile5">
+            <img src="img/img2.png" alt="App 10">
+            <div class="text">Video</div>
+        </div>
+        <div class="tile row-3 tile1">
+            <img src="img/img3.png" alt="App 11">
+            <div class="text">Music</div>
+        </div>
+
+        <!-- Cuarta fila con distribuciones personalizadas (igual que las dos primeras) -->
+        <div class="tile row-1 tile2">
+            <img src="img/img4.png" alt="App 12">
+            <div class="text">Desktop</div>
+        </div>
+        <div class="tile row-1 tile3">
+            <img src="img/img1.png" alt="App 13">
+            <div class="text">Weather</div>
+        </div>
+        <div class="tile row-2 tile4">
+            <img src="img/img2.png" alt="App 14">
+            <div class="text">Xbox LIVE Games</div>
+        </div>
+        <div class="tile row-2 tile5">
+            <img src="img/img3.png" alt="App 15">
+            <div class="text">Camera</div>
+        </div>
+    </div>
+</body>
+</html>
